@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.gallery {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery-image {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 100;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+button:focus {
+    outline: none;
+}
